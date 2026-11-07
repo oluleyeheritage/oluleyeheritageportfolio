@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluleye Heritage — Python Developer</title>
+    <meta name="description" content="Personal portfolio of Oluleye Heritage, Python Developer & Computer Science Student at Federal University Oye-Ekiti.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#top" class="wordmark" data-page="home">oluleye<span class="accent-dot">.</span></a>
+            
+            <nav class="nav-desktop" aria-label="Main Navigation">
+                <a href="#top" class="nav-link active" data-page="home">Home</a>
+                <a href="#projects" class="nav-link" data-page="projects">Projects</a>
+                <a href="#skills" class="nav-link" data-page="home" data-scroll="skills">Skills</a>
+                <a href="#about" class="nav-link" data-page="about">About</a>
+                <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+            </nav>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" aria-hidden="true">
+            <nav aria-label="Mobile Navigation">
+                <a href="#top" class="mobile-nav-link" data-page="home">Home</a>
+                <a href="#projects" class="mobile-nav-link" data-page="projects">Projects</a>
+                <a href="#skills" class="mobile-nav-link" data-page="home" data-scroll="skills">Skills</a>
+                <a href="#about" class="mobile-nav-link" data-page="about">About</a>
+                <a href="#contact" class="mobile-nav-link" data-page="contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE 1: HOME PAGE -->
+    <div id="page-home" class="page-view active-view">
+        <main id="top">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container hero-grid">
+                    <div class="hero-content">
+                        <div class="intro-label">
+                            <span class="dot"></span>
+                            <span>OLULEYE HERITAGE / PYTHON DEVELOPER</span>
+                        </div>
+                        
+                        <h1 class="hero-headline">Learning by building. Getting better with every project.</h1>
+                        
+                        <p class="hero-subtext">
+                            I'm a Computer Science student who enjoys writing Python, exploring how software works, and turning ideas into working programs.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" data-page="projects">Explore My Work</button>
+                            <button class="btn btn-secondary" data-page="contact">Get In Touch</button>
+                        </div>
+                        
+                        <p class="hero-meta">
+                            Based in Nigeria · Currently building with Python
+                        </p>
+                    </div>
+                    
+                    <!-- Code Editor Column -->
+                    <div class="hero-code-panel">
+                        <div class="editor-window">
+                            <div class="editor-header">
+                                <div class="window-controls">
+                                    <span class="control close"></span>
+                                    <span class="control minimize"></span>
+                                    <span class="control maximize"></span>
+                                </div>
+                                <div class="tab">
+                                    <svg class="py-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                    <span>developer.py</span>
+                                </div>
+                            </div>
+                            <div class="editor-body">
+                                <pre><code><span class="line"><span class="keyword">class</span> <span class="class-name">Developer</span>:</span>
+<span class="line">    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="self">self</span>, name):</span>
+<span class="line">        <span class="self">self</span>.name = name</span>
+<span class="line">        <span class="self">self</span>.language = <span class="string">"Python"</span></span>
+<span class="line"></span>
+<span class="line">    <span class="keyword">def</span> <span class="function">build</span>(<span class="self">self</span>):</span>
+<span class="line">        <span class="keyword">return</span> <span class="string">"Useful software"</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line">me = <span class="class-name">Developer</span>(<span class="string">"Oluleye Heritage"</span>)</span>
+<span class="line"><span class="builtin">print</span>(me.build())</span></code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personal Details Strip -->
+            <section class="details-strip">
+                <div class="container">
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">CURRENTLY LEARNING</span>
+                            <span class="detail-value">Python and software development</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">BUILDING</span>
+                            <span class="detail-value">Practical programming projects</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">STUDYING</span>
+                            <span class="detail-value">Computer Science</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills & Tools Section -->
+            <section id="skills" class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">SKILLS & TOOLS</h2>
+                        <p class="section-subtitle">Technologies and concepts I work with daily.</p>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <span class="skill-category">Primary Language</span>
+                            <h3 class="skill-name">Python</h3>
+                            <p class="skill-desc">Object-oriented programming, data structures, algorithm logic, and script automation.</p>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-category">Development</span>
+                            <h3 class="skill-name">Problem Solving & Logic</h3>
+                            <p class="skill-desc">Breaking down requirements into clean, manageable functions and modular code components.</p>
+                        </div>
+                        <div class="skill-card">
+                            <span class="skill-category">Environment</span>
+                            <h3 class="skill-name">Tools & Workflow</h3>
+                            <p class="skill-desc">VS Code, Git version control, command line navigation, and fundamental HTML/CSS.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Selected Projects Preview Section -->
+            <section id="home-projects" class="section">
+                <div class="container">
+                    <div class="section-header flex-header">
+                        <div>
+                            <h2 class="section-title">A FEW THINGS I'VE BUILT</h2>
+                            <p class="section-subtitle">Small projects, practical ideas, and lessons learned by building.</p>
+                        </div>
+                        <button class="btn btn-secondary view-all-btn" data-page="projects">View All Projects (10)</button>
+                    </div>
+                    
+                    <div class="projects-list">
+                        <article class="project-row">
+                            <span class="project-num">01</span>
+                            <div class="project-main">
+                                <div class="project-title-wrap">
+                                    <h3 class="project-title">CBT Quiz Application</h3>
+                                    <span class="badge">Python</span>
+                                </div>
+                                <p class="project-desc">A Python multiple-choice examination program that selects random questions for each quiz session.</p>
+                            </div>
+                        </article>
+
+                        <article class="project-row">
+                            <span class="project-num">02</span>
+                            <div class="project-main">
+                                <div class="project-title-wrap">
+                                    <h3 class="project-title">Contact Management System</h3>
+                                    <span class="badge">Python</span>
+                                </div>
+                                <p class="project-desc">A robust contact manager allowing creation, searching, editing, and persistent record storage.</p>
+                            </div>
+                        </article>
+
+                        <article class="project-row">
+                            <span class="project-num">03</span>
+                            <div class="project-main">
+                                <div class="project-title-wrap">
+                                    <h3 class="project-title">Library Management System</h3>
+                                    <span class="badge">Python</span>
+                                </div>
+                                <p class="project-desc">A library tracking program designed for recording books, tracking availability, and managing borrowing.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Short Homepage About Section -->
+            <section id="home-about" class="section about-section">
+                <div class="container">
+                    <div class="section-header flex-header">
+                        <div>
+                            <h2 class="section-title">ABOUT ME</h2>
+                            <p class="section-subtitle">A brief introduction.</p>
+                        </div>
+                        <button class="btn btn-secondary" data-page="about">Read Full Story</button>
+                    </div>
+                    <div class="about-content">
+                        <p>
+                            I'm Oluleye Heritage, a Python developer and Computer Science student based in Nigeria.
+                        </p>
+                        <p>
+                            I enjoy solving problems through code and building practical projects that turn ideas into working solutions. I'm focused on strengthening my Python skills, exploring software development, and learning by building.
+                        </p>
+                        <p>
+                            This website is a collection of my projects, what I'm learning, and the progress I'm making along the way.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- PAGE 2: DEDICATED PROJECTS PAGE -->
+    <div id="page-projects" class="page-view">
+        <section class="section projects-page-section">
+            <div class="container">
+                <div class="page-top-nav">
+                    <button class="back-home-btn" data-page="home">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        <span>Back to Home</span>
+                    </button>
+                </div>
+
+                <div class="section-header">
+                    <h2 class="section-title">ALL PROJECTS CATALOG</h2>
+                    <p class="section-subtitle">A complete collection of Python applications, automation tools, and management systems I've built.</p>
+                </div>
+
+                <!-- Projects Filter / Search Bar -->
+                <div class="projects-filter-bar">
+                    <div class="search-wrap">
+                        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                        <input type="text" id="project-search" placeholder="Search projects by name or keyword...">
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All (10)</button>
+                        <button class="filter-btn" data-filter="management">Management</button>
+                        <button class="filter-btn" data-filter="utility">Utilities</button>
+                        <button class="filter-btn" data-filter="desktop">Desktop Apps</button>
+                    </div>
+                </div>
+
+                <!-- Complete 10 Projects Grid -->
+                <div class="all-projects-grid" id="projects-container">
+                    
+                    <article class="project-card" data-category="utility" data-keywords="cbt quiz exam test multiple choice python">
+                        <div class="card-top">
+                            <span class="card-num">01</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <h3 class="card-title">CBT Quiz Application</h3>
+                        <p class="card-desc">A Python multiple-choice examination program that selects random questions for each quiz session.</p>
+                        <div class="card-footer">
+                            <span class="card-cat-tag">Utility / CLI</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="management" data-keywords="contact management phone book search edit delete">
+                        <div class="card-top">
+                            <span class="card-num">02</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <h3 class="card-title">Contact Management System</h3>
+                        <p class="card-desc">A contact management program with contact creation, searching, editing, and deletion functionality.</p>
+                        <div class="card-footer">
+                            <span class="card-cat-tag">Management System</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="utility" data-keywords="personal expense tracker budget money finance">
+                        <div class="card-top">
+                            <span class="card-num">03</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <h3 class="card-title">Personal Expense Tracker</h3>
+                        <p class="card-desc">A financial logging tool to record daily spending, categorize expenses, and review monthly spending totals.</p>
+                        <div class="card-footer">
+                            <span class="card-cat-tag">Utility / Finance</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="management" data-keywords="librarian library management book borrowing tracking">
+                        <div class="card-top">
+                            <span class="card-num">04</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <h3 class="card-title">Library Management System</h3>
+                        <p class="card-desc">A library management program designed for tracking books, availability, and borrowing transactions.</p>
+                        <div class="card-footer">
+                            <span class="card-cat-tag">Management System</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="utility" data-keywords="weather application forecast api data python">
+                        <div class="card-top">
+                            <span class="card-num">05</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <h3 class="card-title">Weather Application</h3>
+                        <p class="card-desc">A script that queries temperature, humidity, and forecast data for selected cities and displays formatted outputs.</p>
+                        <div class="card-footer">
+                            <span class="card-cat-tag">Utility / API</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="utility" data-keywords="password generator secure random characters security">
+                        <div class="card-top">
+                            <span class="card-num">06</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <h3 class="card-title">Password Generator</h3>
+                        <p class="card-desc">A secure utility tool that generates randomized passwords of customized length with symbols, numbers, and letters.</p>
+                        <div class="card-footer">
+                            <span class="card-cat-tag">Utility / Security</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="management" data-keywords="student result management system scores grades academic">
+                        <div class="card-top">
+                            <span class="card-num">07</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <h3 class="card-title">Student Result Management System</h3>
+                        <p class="card-desc">An academic record system for inputting student scores, computing grade point averages, and generating report summaries.</p>
+                        <div class="card-footer">
+                            <span class="card-cat-tag">Management System</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="desktop" data-keywords="to-do list desktop app task manager tkinter">
+                        <div class="card-top">
+                            <span class="card-num">08</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <h3 class="card-title">To-Do List Desktop App</h3>
+                        <p class="card-desc">A task management application featuring a graphical interface to add, complete, and delete daily tasks.</p>
+                        <div class="card-footer">
+                            <span class="card-cat-tag">Desktop App (Tkinter)</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="management" data-keywords="inventory sales management system stock warehouse business">
+                        <div class="card-top">
+                            <span class="card-num">09</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <h3 class="card-title">Inventory and Sales Management System</h3>
+                        <p class="card-desc">A business utility for recording stock quantities, processing transactions, and monitoring low stock thresholds.</p>
+                        <div class="card-footer">
+                            <span class="card-cat-tag">Management System</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="management" data-keywords="freelancer business manager clients invoicing projects">
+                        <div class="card-top">
+                            <span class="card-num">10</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <h3 class="card-title">Freelancer Business Manager</h3>
+                        <p class="card-desc">An administrative console for tracking active client projects, billable hours, and basic project invoicing.</p>
+                        <div class="card-footer">
+                            <span class="card-cat-tag">Management System</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- PAGE 3: DEDICATED ABOUT PAGE -->
+    <div id="page-about" class="page-view">
+        <section class="section about-page-section">
+            <div class="container">
+                <div class="page-top-nav">
+                    <button class="back-home-btn" data-page="home">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        <span>Back to Home</span>
+                    </button>
+                </div>
+
+                <div class="section-header">
+                    <h2 class="section-title">ABOUT ME</h2>
+                    <p class="section-subtitle">My journey, goals, and learning philosophy as a developer.</p>
+                </div>
+
+                <div class="about-page-card">
+                    <div class="about-content">
+                        <p>
+                            Hi, I'm <strong>Oluleye Heritage</strong>, a Python developer and Computer Science student at the Federal University Oye-Ekiti, Nigeria.
+                        </p>
+                        <p>
+                            I'm passionate about programming, problem-solving, and turning ideas into practical software. I enjoy learning how things work, exploring new technologies, and building projects that help me apply what I learn beyond the classroom.
+                        </p>
+                        <p>
+                            My primary programming language is Python, and I've been developing my skills through hands-on projects, including a Computer-Based Test (CBT) quiz system. Each project gives me an opportunity to improve my coding skills, think more logically, and become a better developer.
+                        </p>
+                        <p>
+                            I'm still growing in my journey, and I believe the best way to improve is to keep building, experimenting, and learning from challenges. My goal is to become a skilled software developer who creates useful, reliable, and meaningful solutions.
+                        </p>
+                        <p>
+                            Outside coding, I'm always looking for new ideas to explore and opportunities to grow as a developer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- PAGE 4: DEDICATED CONTACT PAGE -->
+    <div id="page-contact" class="page-view">
+        <section class="section contact-page-section">
+            <div class="container">
+                <div class="page-top-nav">
+                    <button class="back-home-btn" data-page="home">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        <span>Back to Home</span>
+                    </button>
+                </div>
+
+                <div class="section-header">
+                    <h2 class="section-title">GET IN TOUCH</h2>
+                    <p class="section-subtitle">Let's connect, collaborate, or discuss Python code.</p>
+                </div>
+
+                <div class="contact-page-card">
+                    <p class="contact-intro-text">
+                        I am always open to connecting with fellow students, developers, and recruiters. Reach out through any of the direct channels below:
+                    </p>
+
+                    <div class="contact-channels-list">
+                        <!-- Email -->
+                        <a href="mailto:heritage.oluleye.dev@gmail.com" class="channel-item">
+                            <div class="channel-icon-wrap">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div class="channel-details">
+                                <span class="channel-label">Email Address</span>
+                                <span class="channel-value">heritage.oluleye.dev@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <!-- Phone -->
+                        <a href="tel:+2348036655403" class="channel-item">
+                            <div class="channel-icon-wrap">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div class="channel-details">
+                                <span class="channel-label">Phone Number</span>
+                                <span class="channel-value">+234 803 665 5403</span>
+                            </div>
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/2348036655403" target="_blank" rel="noopener noreferrer" class="channel-item">
+                            <div class="channel-icon-wrap whatsapp-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                            </div>
+                            <div class="channel-details">
+                                <span class="channel-label">WhatsApp Chat</span>
+                                <span class="channel-value">+234 803 665 5403</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="contact-meta-grid">
+                        <div class="info-item">
+                            <span class="info-label">Location</span>
+                            <span class="info-val">Ibadan / Oye-Ekiti, Nigeria</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Status</span>
+                            <span class="info-val">Open to learning & collaborations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-left">
+                <span class="footer-name">Oluleye Heritage</span>
+                <span class="footer-tech">Built with HTML, CSS & JavaScript</span>
+            </div>
+            <a href="#top" class="back-to-top" aria-label="Back to top of page">
+                <span>Back to top</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Vanilla JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
